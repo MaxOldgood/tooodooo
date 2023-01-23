@@ -1,0 +1,127 @@
+body {
+    background-image: url(img/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.toDo-body {
+    height: 688px;
+    width: 476px;
+   
+    background-color: #333333;
+    opacity: 0.8;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.task-block {
+    margin-left: 8px;
+}
+
+.priority-name {
+    width: 43px;
+    height: 21px;
+    color:antiquewhite;
+
+    margin: auto;
+    padding-top: 25px;
+    margin-bottom: 12px;
+
+    line-height: 21px;
+}
+
+.task, .add-task, .added-task {
+    box-sizing: border-box;
+
+    width: 460px;
+    min-height: 45px;
+
+    background: #FFFFFF;
+    border: 1px solid #989898;
+    border-radius: 6px;
+
+    margin-top: 8px; 
+}
+
+.task, #add-high-task-form, #add-low-task-form {
+    display: flex;
+}
+
+.add-task-input, #add-high-task-input, #add-low-task-input {
+    width: 230px;
+    height: 21px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-top: 12px;
+    margin-left: 12px;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: #BBBBBB;
+    opacity: 1;
+}
+
+.add-task-button, #add-high-task-button, #add-low-task-button {
+    height: 21px;
+    width: 21px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-left: auto;
+    border: none;
+    background-color:#FFFFFF;
+}
+
+.complete-task-button {
+    box-sizing: border-box;
+
+    min-width: 21px;
+    min-height: 21px;
+    max-width: 21px;
+    max-height: 21px;
+
+    border: 1px solid #998899;
+
+    margin-left: 12px;
+    margin-top: 12px;
+    color-scheme: red;
+}
+
+.task-name {  
+    position: absolute;
+    line-height: 21px;
+    color: #202020;
+    margin-top: 12px;
+    margin-left: 50px;
+}
+
+.delete-task-button {
+    height: 21px;
+    width: 21px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
+   
+  
+
+}
+
+.added-task:has(.complete-task-button:checked) {
+    background-color: #51cc99;
+    text-decoration: line-through;
+}
+
+.complete-task-button:checked {
+    accent-color: rgb(3, 90, 78);
+}

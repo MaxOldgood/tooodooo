@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toDo-body">
+        <div class ="task-block priority-high">
+            <p class="priority-name">HIGH</p>
+            <div id="first-form" class="add-task">
+                <form name = "highTaskForm"  id="add-high-task-form">
+                    <input name="taskName" id="add-high-task-input" placeholder="Add task">
+                    <input id="add-high-task-button" type="image" src="img\plus-icon.svg">
+                </form>
+            </div>
+            <template id="new-task-template">
+            <div class="added-task">
+                <output id="taskName" name="name" class="task-name"></output>
+                <input type="checkbox" class="complete-task-button" onclick="statusChange()">
+                <input id="delete-task" type="image" src="img\close-icon.svg" class="delete-task-button" onclick="removeTask()">
+            </div>
+            </template>
+        </div>
+        <div class ="task-block priority-low">
+            <p class="priority-name">LOW</p>
+            <div id="second-form" class="add-task">
+                <form id="add-low-task-form">
+                    <input id="add-low-task-input" placeholder="Add task">
+                    <input id="add-low-task-button" type="image" src="./img/plus-icon.svg">
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
